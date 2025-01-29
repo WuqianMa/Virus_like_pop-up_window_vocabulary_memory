@@ -29,6 +29,24 @@ npm start
 ```
 This will start the app at `http://localhost:3000/`.
 
+### **4️⃣ Building for Production**
+If you want to create a production build, run:
+```sh
+npm run build
+```
+This will generate an optimized `build/` folder.
+
+### **5️⃣ Running the Production Build Locally**
+To test the production build locally, install `serve`:
+```sh
+npm install -g serve
+```
+Then, run:
+```sh
+serve -s build
+```
+This will start a local server, and you can access your app at `http://localhost:5000/`.
+
 ## 📁 CSV File Format
 Ensure you have a `EnWords.csv` file in the `public/` directory, structured as:
 ```csv
@@ -73,5 +91,7 @@ This project is **open-source** and available under the MIT License.
 
 ---
 👨‍💻 Built with ❤️ using **React + Styled Components**
+
+
 
 
