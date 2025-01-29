@@ -1,8 +1,77 @@
-# React + Vite
+# Vocabulary Flashcard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React-based Vocabulary Flashcard Web App** that dynamically displays random words with their translations. The app reads a CSV file containing vocabulary words and their translations, then periodically shows them in animated flashcards with random colors and positions.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Reads vocabulary words and translations from a **CSV file**.
+- Displays flashcards that appear at random positions on the screen.
+- Automatically cycles through words at a set interval.
+- Ensures **font size scales** with the card size for better readability.
+- **Adaptive font size**: If a translation exceeds 10 words, it is displayed in a smaller font.
+- Deployed via **GitHub Pages** for easy access.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/YOUR-GITHUB-USERNAME/REPOSITORY-NAME.git
+cd REPOSITORY-NAME
+```
+
+### **2️⃣ Install Dependencies**
+```sh
+npm install
+```
+
+### **3️⃣ Run the Development Server**
+```sh
+npm start
+```
+This will start the app at `http://localhost:3000/`.
+
+## 📁 CSV File Format
+Ensure you have a `EnWords.csv` file in the `public/` directory, structured as:
+```csv
+word,translation
+hello,hola
+apple,manzana
+computer,ordenador
+```
+
+## 🌍 Deploying to GitHub Pages
+### **1️⃣ Install `gh-pages`**
+```sh
+npm install gh-pages --save-dev
+```
+
+### **2️⃣ Update `package.json`**
+Add the following:
+```json
+"homepage": "https://your-github-username.github.io/repository-name",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+### **3️⃣ Deploy**
+```sh
+npm run deploy
+```
+After deployment, your app will be live at:
+```
+https://your-github-username.github.io/repository-name
+```
+
+## 🏗️ Future Improvements
+- Add user interaction (e.g., click to reveal translation).
+- Customizable word display settings.
+- Support for multiple languages.
+
+## 📝 License
+This project is **open-source** and available under the MIT License.
+
+---
+👨‍💻 Built with ❤️ using **React + Styled Components**
+
+
