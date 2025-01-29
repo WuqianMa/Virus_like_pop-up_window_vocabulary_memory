@@ -3,6 +3,8 @@
 This is a **React-based Vocabulary Flashcard Web App** that dynamically displays random words with their translations. The app reads a CSV file containing vocabulary words and their translations, then periodically shows them in animated flashcards with random colors and positions.
 
 ## 🚀 Features
+![Description of GIF](https://github.com/WuqianMa/Virus_like_pop-up_window_vocabulary_memory/ex.jpg)
+
 - Reads vocabulary words and translations from a **CSV file**.
 - Displays flashcards that appear at random positions on the screen.
 - Automatically cycles through words at a set interval.
