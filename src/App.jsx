@@ -4,7 +4,6 @@ import Papa from "papaparse"; // CSV Parser
 import "./App.css";
 
 const CARD_SIZE_RATIO = 0.3; // 30% of the viewport size
-const FONT_SIZE_RATIO = 2; // 300% of the smaller dimension of the card
 const DEFAULT_INTERVAL = 500; // Default interval in ms
 
 const getRandomPosition = () => {
